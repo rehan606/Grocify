@@ -50,7 +50,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu  */}
-                <ul className={`flex flex-col lg:hidden space-y-6 bg-orange-400/50 backdrop-blur-xl rounded-2xl absolute p-10 top-30 -left-full transform -translate-x-1/2 items-center shadow-lg transition-all duration-500 ${showMenu ? 'left-1/2' :""}`}>
+                <ul className={`flex flex-col lg:hidden space-y-6 bg-orange-400/50 backdrop-blur-lg rounded-2xl absolute p-10 top-20 -left-full transform -translate-x-1/2 items-center shadow-lg transition-all duration-500 ${showMenu ? 'left-1/2' :""}`}>
                     <li><a href="#" className="hover:text-orange-500 text-orange-500 transition-all tracking-wider ">Home</a></li>
                     <li><a href="#" className="hover:text-orange-500 transition tracking-wider text-zink-800 ">About</a></li>
                     <li><a href="#" className="hover:text-orange-500 transition tracking-wider text-zink-800 ">Services</a></li>
