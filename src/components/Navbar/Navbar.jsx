@@ -20,7 +20,7 @@ const Navbar = () => {
 
             {/* Navbar Action  */} 
             <div className='flex items-center gap-x-4 ml-6'>
-                <div className='flex p-1 items-center  bg-amber-100  rounded-full border border-orange-400'>
+                <div className='flex p-1 items-center rounded-full border border-orange-400'>
                     <input type="text" name='text' id='text' placeholder='Search...' autoComplete='off' className='flex-1 h-[5vh] px-3 outline-none' />
 
                     <button className='w-10 h-10 text-xl text-white rounded-full bg-linear-to-b from-orange-400 to-orange-500 flex items-center justify-center '><IoSearchSharp /></button>
