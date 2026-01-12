@@ -34,11 +34,11 @@ const Category = () => {
                <Heading title="Shop" content="by Category" />
 
                {/* Category Grid */}
-                <div className='max-w-1400 mx-auto px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  mt-12 '>
+                <div className='max-w-1400 mx-auto px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 '>
                     {categories.map((category) => (
                         <div key={category.id} className=' rounded-xl overflow-hidden'>
                             {/* Card Image */}
-                            <div className='w-full min-h-[30vh] -mb-10 relative'>
+                            <div className='w-full min-h-[30vh] -mb-10 relative '>
                                 <img src={category.image} alt={category.name} className='absolute bottom-0' />
                             </div>
 

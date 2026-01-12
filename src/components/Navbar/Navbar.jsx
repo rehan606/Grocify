@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { GoHeartFill } from "react-icons/go";
 import { HiShoppingBag } from "react-icons/hi2";
 import { IoSearchSharp } from "react-icons/io5";
@@ -7,15 +6,33 @@ import { TbMenu2 , TbMenu3 } from "react-icons/tb";
 
 const Navbar = () => {
 
-    const [showMenu, setShowMenu] = useState(false)
+    const [showMenu, setShowMenu] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
     }
 
+    // scroll event listener
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 10) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
 
-        <header className='bg-white fixed top-0 left-0 right-0 shadow'>
+        <header className={`bg-white fixed top-0 left-0 right-0 z-50 ${isScrolled ? 'shadow-md' : ''} transition-all`}>
             <nav className=' max-w-1400 mx-auto md:h-[14vh] h-[12vh] px-10 flex items-center justify-between '>
                 {/* Logo */}
                 <a href='#' className="text-2xl font-bold ">Gr<span className="text-orange-500">o</span>cify</a>
