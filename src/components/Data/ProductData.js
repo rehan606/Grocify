@@ -84,7 +84,7 @@ const Products = [
   {
     id: 9,
     name: "Broccoli",
-    price: "$2.25",
+    price: 2.25,
     category: "Vegetables",
     image: Broccoli,
   },

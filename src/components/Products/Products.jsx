@@ -3,7 +3,6 @@ import Heading from '../Heading/Heading'
 import ProductData from '../Data/ProductData';
 import Cards from '../Cards/Cards';
 import Button from '../Button/Button';
-import { FaChevronDown } from 'react-icons/fa';
 
 
 
@@ -13,8 +12,10 @@ const Products = () => {
     const categories = [ 'All', 'Fruits', 'Vegetables', 'SeaFoods', 'Dairy', 'Meat' ];
     const [selectedCategory, setSelectedCategory] = useState('All');
 
-    const renderCards = ProductData.slice(0, 8).map(product => {
-       
+    let filteredProducts = selectedCategory === 'All' ? ProductData : ProductData.filter(product => product.category === selectedCategory);
+
+    const renderCards = filteredProducts.slice(0, 8).map(product => {
+         
             return (
                 <Cards image={product.image} name={product.name} price={product.price} />
             );
@@ -48,13 +49,13 @@ const Products = () => {
                     </div>
 
                     <div className=" flex items-center justify-center mt-15">
-                        <Button content="View All" /> 
+                        <Button content="View All" />  
                     </div>
                     
-                </div>
+                </div> 
             </div>
-        </section>
+        </section> 
     )
 }
 
-export default Products
+export default Products;
