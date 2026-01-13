@@ -28,7 +28,7 @@ const Products = [
   {
     id: 1,
     name: "Strawberry",
-    price: 3.09,
+    price: 3,
     category: "Fruits",
     image: Strawbeeey,
   },
