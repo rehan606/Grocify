@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import Heading from '../Heading/Heading'
+import ProductData from '../Data/ProductData';
 
 // product category
 const categories = [ 'All', 'Fruits', 'Vegetables', 'SeaFoods', 'Dairy', 'Meat' ];
+
 
 const Products = () => {
 

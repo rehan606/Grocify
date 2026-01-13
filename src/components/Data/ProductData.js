@@ -24,7 +24,7 @@ import RicottaCheese from "../../assets/images/ricotta-cheese.png";
 import Grapes from "../../assets/images/grapes.png";
 import Lettuce from "../../assets/images/lettuce.png";
 
-const Product = [
+const Products = [
   {
     id: 1,
     name: "Strawberry",
@@ -202,4 +202,4 @@ const Product = [
   },
 ];
 
-export default Product;
+export default Products;
