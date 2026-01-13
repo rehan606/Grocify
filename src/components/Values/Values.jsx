@@ -33,11 +33,11 @@ const ValuesData = [
 
 const Values = () => {
   return (
-    <section className='max-w-1400 mx-auto px-10'>
+    <section className='max-w-1400 mx-auto px-10 bg-white py-10 '>      
         <div>
             <Heading title="Our" content="Values" />
 
-            <div className='flex items-center justify-between mt-8 lg:mt-12 mb-20 md:gap-6 lg:gap-10 flex-col md:flex-row'>
+            <div className='flex items-center justify-between mt-8 lg:mt-6 mb-20 md:gap-6 lg:gap-4 flex-col md:flex-row'>
                 {/* Left values */}
                 <div className=' w-full lg:w-1/3 '>
                     {ValuesData.slice(0, 2).map((value) => (
@@ -47,27 +47,27 @@ const Values = () => {
                             </div>
                             <div>
                                 <h3 className='font-bold text-lg md:text-3xl text-zinc-800'>{value.title}</h3>
-                                <p className='text-zinc-600'>{value.description}</p>
+                                <p className='text-zinc-600 mt-2'>{value.description}</p>
                             </div>
                         </div>
                     ))}
                 </div>
 
                 {/* Middle image */}
-                <div className='w-full lg:w-1/3 hidden lg:block'>
+                <div className='w-full lg:w-1/3 hidden lg:block p-6 mt-8'>
                     <img src={ValuesImage} alt="Values image" />
                 </div>
 
                 {/* Right values */}
                 <div className='w-full lg:w-1/3  '>
                     {ValuesData.slice(2, 4).map((value) => (
-                        <div key={value.id} className='flex items-center border border-gray-200 p-4 shadow-md rounded-lg mt-6 lg:mt-20   min-h-36 md:min-h-40 lg:min-h-36'>
+                        <div key={value.id} className='flex items-center  p-4  rounded-lg mt-6 lg:mt-20   min-h-36 md:min-h-40 lg:min-h-36 border border-gray-200 shadow-md'>
                             <div className='mr-4 '>
                                <span className='flex items-center justify-center text-3xl bg-linear-to-b from-orange-400 to-orange-500 w-15 h-15 rounded-full text-white'>{value.icon}</span> 
                             </div>
                             <div>
                                 <h3 className='font-bold text-lg md:text-3xl text-zinc-800'>{value.title}</h3>
-                                <p className='text-zinc-600'>{value.description}</p>
+                                <p className='text-zinc-600 mt-2'>{value.description}</p>
                             </div>
                         </div>
                     ))}
