@@ -22,13 +22,13 @@ const Products = () => {
     });
 
     return (
-        <section className='max-w-1400 mx-auto px-10 md:pb-20'>
+        <section className='max-w-1400 mx-auto px-10 mb-10 md:mb-none lg:pb-20'>
             <div>
                 <Heading title="Our" content="Products" />
 
                 <div>
                     {/* Product categories */}
-                    <div className='flex items-center justify-center gap-6 mt-8 flex-wrap'>
+                    <div className='flex items-center justify-center gap-4 mt-8 flex-wrap'>
                         {categories.map((category, index) => (
                             <button 
                                 key={index} 
@@ -44,7 +44,7 @@ const Products = () => {
 
                     {/* Products grid */}
                         
-                    <div  className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10 '>
+                    <div  className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 '>
                         {renderCards}
                     </div>
 
