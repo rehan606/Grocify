@@ -1,14 +1,24 @@
 import React, { useState } from 'react'
 import Heading from '../Heading/Heading'
 import ProductData from '../Data/ProductData';
+import Cards from '../Cards/Cards';
+import Button from '../Button/Button';
+import { FaChevronDown } from 'react-icons/fa';
 
-// product category
-const categories = [ 'All', 'Fruits', 'Vegetables', 'SeaFoods', 'Dairy', 'Meat' ];
+
 
 
 const Products = () => {
-
+    // product category
+    const categories = [ 'All', 'Fruits', 'Vegetables', 'SeaFoods', 'Dairy', 'Meat' ];
     const [selectedCategory, setSelectedCategory] = useState('All');
+
+    const renderCards = ProductData.slice(0, 8).map(product => {
+       
+            return (
+                <Cards image={product.image} name={product.name} price={product.price} />
+            );
+    });
 
     return (
         <section className='max-w-1400 mx-auto px-10 md:pb-20'>
@@ -16,7 +26,7 @@ const Products = () => {
                 <Heading title="Our" content="Products" />
 
                 <div>
-                    {/* Product categories will go here */}
+                    {/* Product categories */}
                     <div className='flex items-center justify-center gap-6 mt-8 flex-wrap'>
                         {categories.map((category, index) => (
                             <button 
@@ -30,6 +40,17 @@ const Products = () => {
                             </button> 
                         ))}
                     </div> 
+
+                    {/* Products grid */}
+                        
+                    <div  className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10 '>
+                        {renderCards}
+                    </div>
+
+                    <div className=" flex items-center justify-center mt-15">
+                        <Button content="View All" /> 
+                    </div>
+                    
                 </div>
             </div>
         </section>
