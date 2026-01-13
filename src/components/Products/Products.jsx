@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Heading from '../Heading/Heading'
 
 // product category
-const categories = [ 'All', 'Fruits', 'Vegetables', 'Seafoods', 'Dairy', 'Meat' ];
+const categories = [ 'All', 'Fruits', 'Vegetables', 'SeaFoods', 'Dairy', 'Meat' ];
 
 const Products = () => {
 
@@ -20,7 +20,7 @@ const Products = () => {
                             <button 
                                 key={index} 
                                 className={`px-4 py-2  font-semibold border border-gray-300 rounded-full hover:bg-orange-500 hover:text-white transition duration-300 cursor-pointer
-                                    
+
                                 ${selectedCategory === category ? 'bg-linear-to-b from-orange-400 to-orange-500 text-white' : 'bg-white'}`}
                                 onClick={() => setSelectedCategory(category)}
                             >
