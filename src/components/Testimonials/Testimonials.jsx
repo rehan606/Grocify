@@ -1,20 +1,31 @@
 import React from 'react'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+
+// import required modules
+import { Navigation } from 'swiper/modules';
+
 import Heading from '../Heading/Heading'
 import { IoIosArrowForward , IoIosArrowBack} from 'react-icons/io'
-import Customer1 from '../../assets/customer1.jpg'
-import Customer2 from '../../assets/customer2.jpg'
-import Customer3 from '../../assets/customer3.jpg'
-import Customer4 from '../../assets/customer4.jpg'
-import Customer5 from '../../assets/customer4.jpg'
+import Customer1 from '../../assets/images/customer1.jpg'
+import Customer2 from '../../assets/images/customer2.jpg'
+import Customer3 from '../../assets/images/customer3.jpg'
+import Customer4 from '../../assets/images/customer4.jpg'
+import Customer5 from '../../assets/images/customer4.jpg'
 
 // Review object structure
 
-const review = [
+const reviews = [
     {
         id: 1,
         name: "Rehan Khan",
         profession: "Web Developer",
-        FcRating: 5,
+        rating: 5,
         content: " Fantastic product! Highly recommend to everyone looking for quality and reliability. very satisfied with my purchase. ",
         image: Customer1
     },
@@ -22,7 +33,7 @@ const review = [
         id: 2,
         name: "Rabina Rabi",
         profession: "Food Blogger",
-        FcRating: 4,
+        rating: 4,
         content: " Amazing product! Exceeded my expectations in every way. love it! and will recommend to my friends and family. this is a must-have! ",
         image: Customer2
     },
@@ -30,7 +41,7 @@ const review = [
         id: 3,
         name: "Alice Johnson",
         profession: "Fitness Trainer",
-        FcRating: 5,
+        rating: 5,
         content: " Exceptional quality and fantastic customer support! and I am extremely satisfied with my purchase. thank you! ",
         image: Customer3
     },
@@ -38,7 +49,7 @@ const review = [
         id: 4,
         name: "Bob Wilson",
         profession: "Model",
-        FcRating: 5,
+        rating: 5,
         content: " Good Product and Excellent Service. Highly recommend to everyone! ",
         image: Customer4
     },
@@ -46,7 +57,7 @@ const review = [
         id: 5,
         name: "Charlie Brown",
         profession: "Chef",
-        FcRating: 5,
+        rating: 5,
         content: " Outstanding product and service! Will definitely be ordering again. Highly recommended! ",
         image: Customer5
     }
@@ -69,6 +80,29 @@ const Testimonials = () => {
                 </div>
 
                 {/* Testimonial Slide  */}
+                <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                    {reviews.map(review => (
+                        <SwiperSlide SwiperSlide key={review.id} className='mt-10 bg-zinc-100 p-10 rounded-lg shadow-lg'>
+                            <div className='flex items-center gap-5 mb-5'>
+                                <div className='w-14 h-14 rounded-full bg-red-500 outline-2 outline-orange-500 outline-offset-2'></div>
+
+                                
+                                <div>
+                                    <h5 className='text-xl font-bold'>{review.name}</h5>
+                                    <p className='text-zinc-600 italic'>{review.profession}</p>
+                                    <span>{review.rating}</span>
+                                </div>
+                            </div>
+
+                            
+                            <div className='ml-auto'>
+                                <p className='text-zinc-600 italic'>{review.content}</p>
+                            </div>
+                        </SwiperSlide>                      
+                    ))}
+                </Swiper>
+
+
                 {/* <div className='mt-10 bg-zinc-100 p-10 rounded-lg shadow-lg'>
                     <div className='flex items-center gap-5 mb-5'>
                         <div className='w-14 h-14 rounded-full bg-red-500 outline-2 outline-orange-500 outline-offset-2'></div>
