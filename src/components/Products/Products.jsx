@@ -22,7 +22,7 @@ const Products = () => {
     });
 
     return (
-        <section className='max-w-1400 mx-auto px-10 mb-10 md:mb-none lg:pb-20'>
+        <section className='max-w-1400 mx-auto px-10 mb-10 md:mb-none lg:pb-10'>
             <div>
                 <Heading title="Our" content="Products" />
 

@@ -12,7 +12,7 @@ const Footer = () => {
 
                         <p className="mt-4 text-zinc-800">Bred for a high content of beneficial substances. Our products adre aall fresh and health.</p>
 
-                        <p className="mt-4 text-zinc-800"> <span className="text-orange-500"> {new Date().getFullYear()} </span> © All Right Reserved  </p>
+                        <p className="mt-4 text-zinc-800"> <span className="text-orange-500"> {new Date().getFullYear()} </span> © All Right Reserved.  </p>
 
                         
                     </div>
@@ -20,8 +20,8 @@ const Footer = () => {
                     {/* Company Links */}
                     <div className="">
                         <h3 className="text-xl font-bold text-zinc-800 mb-4">Company</h3>
-                        <ul className="space-y-2">
-                            <li className=""> <a href="#" className="text-zinc-800 group-hover:text-orange-500 transition-all duration-300 ">About</a> </li>
+                        <ul className="space-y-3">
+                            <li className=""> <a href="#" className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">About</a> </li>
                             <li> <a href="#" className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">FAQ's</a> </li>
                         </ul>
                     </div>
@@ -29,7 +29,7 @@ const Footer = () => {
                     {/* Support Links */}
                     <div className="">
                         <h3 className="text-xl font-bold text-zinc-800 mb-4">Support</h3>
-                        <ul className="space-y-2">
+                        <ul className="space-y-3">
                             <li> <a href="#" className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Support Center</a> </li>
                             <li> <a href="#" className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Feedback</a> </li>
                             <li> <a href="#" className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Contact us</a> </li>

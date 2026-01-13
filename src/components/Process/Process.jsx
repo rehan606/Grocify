@@ -41,17 +41,17 @@ const Process = () => {
         <section className='max-w-1400 mx-auto px-10 py-20 md:py-20'>
             <div>
                 <div className='w-fit mb-10 ml-0'>
-                    <Heading title="Our" content="Process" />
+                    <Heading title="Our" content="Process"/>
                 </div>
 
 
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:pt-56'>
                     
-                    {steps.map((step, id) => (
+                    {steps.map((step) => (
                         <div key={step.id} 
                             className={`flex flex-col items-center text-center p-5  rounded-lg  shadow-lg lg:shadow-none transition-shadow duration-300 
-                            ${step.id % 2 === 0 ? 'lg:-mt-46' : ''} `}>
+                             ${step.id % 2 === 0 ? 'lg:-mt-46' : ''} `}>
 
                             {/* Number  */}
                             <span className="w-10 h-10 md:w-14 md:h-14 text-6xl rounded-full outline-1 outline-offset-1 outline-dashed flex items-center justify-center  text-zinc-700 ">{step.number}</span>
