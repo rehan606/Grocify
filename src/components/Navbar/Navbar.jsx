@@ -51,7 +51,7 @@ const Navbar = () => {
                     <div className='p-1 items-center rounded-full border border-orange-400 hidden lg:flex '>
                         <input type="text" name='text' id='text' placeholder='Search...' autoComplete='off' className='flex-1 h-[5vh] px-3 outline-none' />
 
-                        <button className='w-10 h-10 text-xl text-white rounded-full bg-linear-to-b from-orange-400 to-orange-500 flex items-center justify-center '><IoSearchSharp /></button>
+                        <button className='w-10 h-10 text-xl text-white rounded-full bg-linear-to-b from-orange-400 to-orange-500 flex items-center justify-center cursor-pointer'><IoSearchSharp /></button>
 
                     </div>
                     <a href="#" className="text-zink-800 text-2xl transition">

@@ -34,28 +34,9 @@ const steps = [
         description: "It is a long established fact that a reader",
         icon: <BsTruck />
     }
-]
+];
 
 const Process = () => {
-
-    const renderSteps = steps.map((step) => {
-        return (
-            <div key={step.id} className={`flex flex-col items-center text-center p-5  rounded-lg  shadow-lg lg:shadow-none transition-shadow duration-300 ${step.id % 2 === 0 ? 'lg:-mt-46' : ''} `}>
-                {/* Number  */}
-                <span className="w-10 h-10 md:w-14 md:h-14 text-6xl rounded-full outline-1 outline-offset-1 outline-dashed flex items-center justify-center  text-zinc-700 ">{step.number}</span>
-
-                <div className='mt-5 flex  items-center gap-3 '>
-                    <span className='bg-linear-to-b from-orange-400 to-orange-500 p-2 rounded-full text-2xl md:text-3xl text-white'>{step.icon}</span>
-                    
-                    <div className='text-left'>
-                        <h3 className='text-xl md:text-2xl font-semibold text-zinc-800 mb-2'>{step.title}</h3>
-                        <p className="text-zinc-500">{step.description}</p>
-                    </div>
-                </div>
-                
-            </div>
-        )
-    })
     return (
         <section className='max-w-1400 mx-auto px-10 py-20 md:py-20'>
             <div>
@@ -63,12 +44,34 @@ const Process = () => {
                     <Heading title="Our" content="Process" />
                 </div>
 
+
+
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:pt-56'>
-                    {renderSteps}
+                    
+                    {steps.map((step, id) => (
+                        <div key={step.id} 
+                            className={`flex flex-col items-center text-center p-5  rounded-lg  shadow-lg lg:shadow-none transition-shadow duration-300 
+                            ${step.id % 2 === 0 ? 'lg:-mt-46' : ''} `}>
+
+                            {/* Number  */}
+                            <span className="w-10 h-10 md:w-14 md:h-14 text-6xl rounded-full outline-1 outline-offset-1 outline-dashed flex items-center justify-center  text-zinc-700 ">{step.number}</span>
+
+                            {/* Content */}
+                            <div className='mt-5 flex  items-center gap-3 '>
+                                <span className='bg-linear-to-b from-orange-400 to-orange-500 p-2 rounded-full text-2xl md:text-3xl text-white'>{step.icon}</span>
+                                
+                                <div className='text-left'>
+                                    <h3 className='text-xl md:text-2xl font-semibold text-zinc-800 mb-2'>{step.title}</h3>
+                                    <p className="text-zinc-500">{step.description}</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
     )
 }
 
-export default Process
+export default Process;
