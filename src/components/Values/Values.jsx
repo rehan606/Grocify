@@ -1,6 +1,7 @@
 import React from 'react'
 import Heading from '../Heading/Heading'
 import { FaHeart, FaLeaf, FaShieldAlt, FaTree } from 'react-icons/fa';
+import { PiPlantFill } from 'react-icons/pi';
 import ValuesImage from '../../assets/images/basket-full-vegetables.png';
 
 
@@ -25,7 +26,7 @@ const ValuesData = [
     },
     {
         id: 4,
-        icon: <FaTree />,
+        icon: <PiPlantFill />,
         title: "100% Organic",
         description: "We ensure that all our products are certified organic, free from harmful pesticides and chemicals."
     }
