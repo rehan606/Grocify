@@ -5,7 +5,7 @@ import BgFruits from '../../assets/images/fruits-banner.jpg'
 const Fruits = () => {
   return (
     <div>
-        <CategoryPage title="Fruits & Veggies" bgImage={BgFruits} />
+        <CategoryPage title="Fruits & Veggies" bgImage={BgFruits} categories={['Fruits', 'Vegetables']}/>
     </div>
   )
 }
