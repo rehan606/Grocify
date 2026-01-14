@@ -1,9 +1,11 @@
 import React from 'react'
+import CategoryPage from '../CategoryPage/CategoryPage'
+import BgAll from '../../assets/images/all-banner.jpg'
 
 const AllProducts = () => {
   return (
     <div>
-      <h1>All Products</h1>
+        <CategoryPage title="All Products" bgImage={BgAll} />
     </div>
   )
 }
