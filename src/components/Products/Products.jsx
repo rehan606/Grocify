@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Heading from '../Heading/Heading'
 import ProductData from '../Data/ProductData';
 import Cards from '../Cards/Cards';
-import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
 
 
 
@@ -49,7 +49,8 @@ const Products = () => {
                     </div>
 
                     <div className=" flex items-center justify-center mt-15">
-                        <Button content="View All" />  
+                        
+                        <Link to="/allproducts" className="bg-linear-to-r from-orange-400 to-orange-500 text-white text-md md:text-lg px-8 py-3 rounded-full  hover:bg-orange-100 transition-all duration-300 cursor-pointer hover:scale-105">View All</Link>
                     </div>
                     
                 </div> 

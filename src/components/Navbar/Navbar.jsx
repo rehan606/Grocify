@@ -3,6 +3,7 @@ import { GoHeartFill } from "react-icons/go";
 import { HiShoppingBag } from "react-icons/hi2";
 import { IoSearchSharp } from "react-icons/io5";
 import { TbMenu2 , TbMenu3 } from "react-icons/tb";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -36,7 +37,7 @@ const Navbar = () => {
         <header className={`bg-white fixed top-0 left-0 right-0 z-50 ${isScrolled ? 'shadow-md' : ''} transition-all`}>
             <nav className=' max-w-1400 mx-auto md:h-[14vh] h-[12vh] px-10 flex items-center justify-between '>
                 {/* Logo */}
-                <a href='#' className="text-2xl font-bold ">Gr<span className="text-orange-500">o</span>cify</a>
+                <Link href='/' className="text-2xl font-bold ">Gr<span className="text-orange-500">o</span>cify</Link>
 
                 {/* Desktop Menu  */}
                 <ul className="hidden lg:flex space-x-6 ">

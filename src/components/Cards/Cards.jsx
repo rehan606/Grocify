@@ -17,7 +17,7 @@ const Cards = ({ image, name, price}) => {
             {/* product details */}
             <div className='text-center'>
                 <h3 className='text-lg md:text-2xl font-semibold text-zinc-800'>{name}</h3>
-                <p className="text-md md:text-xl font-bold mt-3 mb-3 "> ${price.toFixed(2)}</p>
+                <p className="text-md md:text-xl font-bold mt-3 mb-3 "> ${Number(price ?? 0).toFixed(2)}</p>
                 <Button content="Shop Now" />
             </div>
         </div>

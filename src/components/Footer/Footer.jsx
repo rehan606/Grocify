@@ -1,5 +1,6 @@
 import React from 'react'
 import { IoSearchSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6">
                     <div className="pr-10">
                         {/* Logo */}
-                        <a href='#' className="text-2xl font-bold ">Gr<span className="text-orange-500">o</span>cify</a>
+                        <Link to="/" className="text-2xl font-bold ">Gr<span className="text-orange-500">o</span>cify</Link>
 
                         <p className="mt-4 text-zinc-800">Bred for a high content of beneficial substances. Our products adre aall fresh and health.</p>
 
