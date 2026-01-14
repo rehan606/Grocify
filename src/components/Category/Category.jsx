@@ -33,7 +33,7 @@ const categories = [
 const Category = () => {
     return (
         <section>
-            <div className='py-20'>
+            <div className='py-10 lg:py-20'>
                <Heading title="Shop" content="by Category" />
 
                {/* Category Grid */}

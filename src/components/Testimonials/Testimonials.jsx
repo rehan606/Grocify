@@ -78,7 +78,7 @@ const Testimonials = () => {
                 <Heading title="Customers" content="Saying" />
 
                  {/* Testimonial Slide Button  */}
-                <div className='flex justify-end gap-3 mt-10  '>
+                <div className='flex justify-end gap-3 mt-4 lg:mt-10  '>
                     <button className='custom-prev text-2xl rounded-lg w-11 h-11 bg-zinc-100 hover:bg-linear-to-b hover:from-orange-400 hover:to-orange-500 group flex items-center justify-center cursor-pointer'>
                         <IoIosArrowBack className='text-3xl text-zinc-700 group-hover:text-white transition-colors duration-300' />
                     </button>
@@ -105,7 +105,7 @@ const Testimonials = () => {
                     }}
                     modules={[Navigation]} className="mySwiper">
                     {reviews.map(review => (
-                        <SwiperSlide SwiperSlide key={review.id} className='mt-10 mb-10 bg-zinc-100 p-10 rounded-lg shadow-lg mx-auto'>
+                        <SwiperSlide SwiperSlide key={review.id} className='mt-4 lg:mt-10 mb-10 bg-zinc-100 p-4 md:p-10 rounded-lg shadow-lg mx-auto'>
                             <div className='flex items-center gap-5 mb-5'>
                                 <div className='w-14 h-14 rounded-full bg-red-500 outline-2 outline-orange-500 outline-offset-2'>
                                     <img src={review.image} alt={review.name} className='w-full h-full object-cover rounded-full' />    

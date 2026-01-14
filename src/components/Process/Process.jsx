@@ -38,7 +38,7 @@ const steps = [
 
 const Process = () => {
     return (
-        <section className='max-w-1400 mx-auto px-10 py-20 md:py-20'>
+        <section className='max-w-1400 mx-auto px-10 py-10  md:py-20'>
             <div>
                 <div className='w-fit mb-10 ml-0'>
                     <Heading title="Our" content="Process"/>
