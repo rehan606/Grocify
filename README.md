@@ -1,16 +1,110 @@
-# React + Vite
+# 🛒 GROCIFY – Online Grocery Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GROCIFY is a modern and responsive grocery shopping website built with **React**.  
+It allows users to browse grocery products, filter them by category, and enjoy a smooth UI experience across all devices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Preview
+> (Add your live site link here if available)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Features
 
-## Expanding the ESLint configuration
+- 🥦 Browse grocery products easily  
+- 🔍 Filter products by category  
+- 📱 Fully responsive design (Mobile, Tablet, Desktop)  
+- 🎠 Swiper slider for banners & featured products  
+- ⚡ Fast and smooth navigation using React Router  
+- 🎨 Clean UI with Tailwind CSS  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+
+- **React**  
+- **React Router DOM**  
+- **Tailwind CSS**  
+- **Swiper Slider**  
+- **JavaScript (ES6+)**
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+│── assets/
+│── components/
+│── App.jsx
+│── main.jsx
+│── index.css
+
+```
+
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/rehan606/Grocify.git
+
+# Go to project directory
+cd grocify
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+```
+
+## 🧪 Dependencies
+
+```bash
+react
+react-router-dom
+tailwindcss
+swiper
+
+```
+
+## 📸 Screenshots
+
+(Add screenshots of your website here)
+
+## 📱 Responsive Design
+
+GROCIFY is fully responsive and optimized for:
+```bash
+Mobile devices 📱
+Tablets 📲
+Desktop screens 💻
+```
+
+## 🤝 Contribution
+
+Contributions are welcome!
+Feel free to fork this repository and submit a pull request.
+
+# 📜 License
+
+This project is open-source and available under the MIT License.
+
+# 👨‍💻 Author
+
+**Rehan**
+Front-End Web Developer
+
+GitHub: ([Profile](https://github.com/rehan606))
+
+LinkedIn: ([Profile](https://www.linkedin.com/in/kh-rehan207/))
+
+⭐ If you like this project, don’t forget to give it a star!
+
