@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="bg-zinc-100  px-10 py-10 md:py-20">
-            <div className="max-w-1400 mx-auto">
+        <footer className="bg-zinc-100   pt-10 md:pt-20">
+            <div className="max-w-1400 mx-auto px-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6">
                     <div className="pr-10">
                         {/* Logo */}
@@ -48,9 +48,14 @@ const Footer = () => {
                                 <button className='w-10 h-10 text-xl text-white rounded-full bg-linear-to-b from-orange-400 to-orange-500 flex items-center justify-center cursor-pointer '><IoSearchSharp /></button>
 
                             </div> 
-
                     </div>
                 </div>   
+                
+            </div>
+
+            {/* Developer Name  */}
+            <div className='border-t border-zinc-500 mt-20 text-center bg-zinc-800 text-white '>
+                <p className='py-4'>This website Design By - <a className='text-orange-500' href="https://www.linkedin.com/in/kh-rehan207/">Rehan</a> </p> 
             </div>
         </footer>
     )
