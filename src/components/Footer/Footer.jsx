@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
 
             {/* Developer Name  */}
-            <div className='border-t border-zinc-500 mt-20 text-center bg-zinc-800 text-white italic '>
+            <div className=' mt-20 text-center bg-zinc-900 text-white italic '>
                 <p className='py-4 '>This website Developed By - <a className='text-orange-500' href="https://www.linkedin.com/in/kh-rehan207/" target='_blank'>Rehan</a> </p> 
             </div>
         </footer>
