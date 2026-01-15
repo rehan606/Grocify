@@ -31,8 +31,8 @@ const Footer = () => {
                     <div className="">
                         <h3 className="text-xl font-bold text-zinc-800 mb-4">Support</h3>
                         <ul className="space-y-3">
-                            <li> <a href="#" className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Support Center</a> </li>
-                            <li> <a href="#" className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Feedback</a> </li>
+                            <li> <Link to={'/contact'} className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Support Center</Link> </li>
+                            <li> <Link to={'/feedback'} className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Feedback</Link> </li>
                             <li> <Link to={'/contact'} className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Contact us</Link> </li>
                         </ul>
                     </div>
@@ -54,8 +54,8 @@ const Footer = () => {
             </div>
 
             {/* Developer Name  */}
-            <div className='border-t border-zinc-500 mt-20 text-center bg-zinc-800 text-white '>
-                <p className='py-4'>This website Design By - <a className='text-orange-500' href="https://www.linkedin.com/in/kh-rehan207/">Rehan</a> </p> 
+            <div className='border-t border-zinc-500 mt-20 text-center bg-zinc-800 text-white italic '>
+                <p className='py-4 '>This website Design By - <a className='text-orange-500' href="https://www.linkedin.com/in/kh-rehan207/">Rehan</a> </p> 
             </div>
         </footer>
     )

@@ -39,8 +39,8 @@ const Faq = () => {
   return (
     <div className="bg-zinc-50 text-zinc-800">
       {/* Hero Section */}
-      <section className="bg-linear-to-r from-orange-900 to-zinc-800 text-white py-20 mt-20">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      <section className="bg-linear-to-r from-orange-900 to-zinc-800 text-white py-12 lg:py-20 mt-20">
+        <div className="max-w-1400 mx-auto px-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Frequently Asked <span className="text-orange-500">Questions</span>
           </h1>
@@ -52,7 +52,7 @@ const Faq = () => {
 
       {/* FAQ Section */}
       <section className="py-16">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-1400 lg:max-w-4xl mx-auto px-10">
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div

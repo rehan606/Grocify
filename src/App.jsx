@@ -10,6 +10,7 @@ import About from './Pages/About/About'
 import Contact from './Pages/Contact/Contact'
 import Service from './Pages/Service/Service'
 import Faq from './Pages/FAQ/Faq'
+import Feedback from './Pages/Feedback/Feedback'
 
 const App = () => {
 
@@ -53,6 +54,10 @@ const App = () => {
         {
           path: '/faq', 
           element: <Faq />
+        },
+        {
+          path: '/feedback', 
+          element: <Feedback />
         },
       ]
     },
