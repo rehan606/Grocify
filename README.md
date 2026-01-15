@@ -77,7 +77,11 @@ swiper
 
 ## 📸 Screenshots
 
-(Add screenshots of your website here)
+<img 
+  src="https://github.com/rehan606/Grocify/blob/613ee437a4e6e69f091594ff1817c79ac9240e0a/src/assets/images/grocify-home.png" 
+  alt="Grocify Home Page"
+  width="800"
+/>
 
 ## 📱 Responsive Design
 
