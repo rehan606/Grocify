@@ -18,6 +18,7 @@ It allows users to browse grocery products, filter them by category, and enjoy a
 - 🎠 Swiper slider for banners & featured products  
 - ⚡ Fast and smooth navigation using React Router  
 - 🎨 Clean UI with Tailwind CSS  
+- 🚀 Scroll to Top with smoothly  
 
 ---
 
@@ -112,4 +113,8 @@ GitHub: ([Profile](https://github.com/rehan606))
 LinkedIn: ([Profile](https://www.linkedin.com/in/kh-rehan207/))
 
 ⭐ If you like this project, don’t forget to give it a star!
+
+---
+
+Thank You !
 
