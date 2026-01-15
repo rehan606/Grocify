@@ -6,7 +6,7 @@ It allows users to browse grocery products, filter them by category, and enjoy a
 ---
 
 ## 🚀 Live Preview
-> (Add your live site link here if available)
+> ([Grocify Live Here](https://grocify-groceryshop.netlify.app/))
 
 ---
 
