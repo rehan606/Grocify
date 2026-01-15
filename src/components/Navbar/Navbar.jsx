@@ -11,9 +11,13 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
+    // Menu toggle function
     const toggleMenu = () => {
         setShowMenu(!showMenu);
     }
+
+    // Menu close function (call when click link)
+    const closeMenu = () => setShowMenu(false);
 
     // scroll event listener
     useEffect(() => {
@@ -79,11 +83,20 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu  */}
-                <ul className={`flex flex-col lg:hidden space-y-6 bg-linear-to-b from-white to-orange-200/50 border border-orange-200 backdrop-blur-lg rounded-xl absolute p-10 top-18 md:top-24 -left-full transform -translate-x-1/2 items-center shadow-lg transition-all duration-500 ${showMenu ? 'left-1/2' :""}`}>
-                    <li><Link to={'/'} className="hover:text-orange-500 text-orange-500 transition-all tracking-wider ">Home</Link></li>
-                    <li><Link to={'/about'} className="hover:text-orange-500 transition tracking-wider text-zink-800 ">About</Link></li>
-                    <li><Link to={'/services'} className="hover:text-orange-500 transition tracking-wider text-zink-800 ">Services</Link></li>
-                    <li><Link to={'/contact'} className="hover:text-orange-500 transition tracking-wider text-zink-800 ">Contact</Link> </li>
+                <ul className={`flex flex-col lg:hidden space-y-6 bg-linear-to-b from-white to-orange-200/50 border border-orange-200 backdrop-blur-lg rounded-xl absolute p-10 top-20  md:top-24 -left-full transform -translate-x-1/2 items-center shadow-lg transition-all duration-500 ${showMenu ? 'left-1/2' :""}`}>
+
+                    <li><NavLink to='/'  onClick={closeMenu} className={({ isActive }) =>
+                            isActive ? "text-orange-500 font-bold" : "text-zinc-800"
+                            }>Home </NavLink> </li>
+                    <li><NavLink to='/about' onClick={closeMenu} className={({ isActive }) =>
+                            isActive ? "text-orange-500 font-bold" : "text-zinc-800"
+                            }>About</NavLink> </li>
+                    <li><NavLink to='/services' onClick={closeMenu} className={({ isActive }) =>
+                            isActive ? "text-orange-500 font-bold" : "text-zinc-800"
+                            }>Services</NavLink> </li>
+                    <li><NavLink to='/contact' onClick={closeMenu} className={({ isActive }) =>
+                            isActive ? "text-orange-500 font-bold" : "text-zinc-800"
+                            }>Contact</NavLink> </li>
 
                     <li className='p-1 items-center rounded-full border border-orange-400 flex'>
                         <input type="text" name='text' id='text' placeholder='Search...' autoComplete='off' className='flex-1 h-[5vh] px-3 outline-none'  />
