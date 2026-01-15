@@ -4,6 +4,7 @@ import { HiShoppingBag } from "react-icons/hi2";
 import { IoSearchSharp } from "react-icons/io5";
 import { TbMenu2 , TbMenu3 } from "react-icons/tb";
 import { Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -41,10 +42,19 @@ const Navbar = () => {
 
                 {/* Desktop Menu  */}
                 <ul className="hidden lg:flex space-x-6 ">
-                    <li><Link to={'/'} className="hover:text-orange-500 text-orange-500 transition-all tracking-wider ">Home</Link></li>
-                    <li><Link to={'/about'} className="hover:text-orange-500 transition tracking-wider text-zink-800 ">About</Link></li>
-                    <li><Link to={'/services'} className="hover:text-orange-500 transition tracking-wider text-zink-800 ">Services</Link></li>
-                    <li><Link to={'/contact'} className="hover:text-orange-500 transition tracking-wider text-zink-800 ">Contact</Link></li>
+                    
+                    <li><NavLink to={'/'} className={({ isActive }) =>
+                            isActive ? "text-orange-500 font-bold" : "text-zinc-800"
+                            }>Home</NavLink></li>
+                    <li><NavLink to={'/about'} className={({ isActive }) =>
+                            isActive ? "text-orange-500 font-bold" : "text-zinc-800"
+                            }>About</NavLink></li>
+                    <li><NavLink to={'/services'} className={({ isActive }) =>
+                            isActive ? "text-orange-500 font-bold" : "text-zinc-800"
+                            }>Services</NavLink></li>
+                    <li><NavLink to={'/contact'} className={({ isActive }) =>
+                            isActive ? "text-orange-500 font-bold" : "text-zinc-800"
+                            }>Contact</NavLink></li>
                 </ul>
 
                 {/* Navbar Action  */} 
