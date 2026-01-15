@@ -37,6 +37,7 @@ It allows users to browse grocery products, filter them by category, and enjoy a
 src/
 │── assets/
 │── components/
+│── Pages/
 │── App.jsx
 │── main.jsx
 │── index.css
