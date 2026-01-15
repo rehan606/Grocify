@@ -34,7 +34,7 @@ const ValuesData = [
 
 const Values = () => {
   return (
-    <section className='max-w-1400 mx-auto px-10 bg-white py-10 '>      
+    <section className='max-w-1400 mx-auto px-10 bg-white  '>      
         <div>
             <Heading title="Our" content="Values" />
 

@@ -33,11 +33,11 @@ const categories = [
 const Category = () => {
     return (
         <section>
-            <div className='py-10 lg:py-20'>
+            <div className='py-10 lg:py-16'>
                <Heading title="Shop" content="by Category" />
 
                {/* Category Grid */}
-                <div className='max-w-1400 mx-auto px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 '>
+                <div className='max-w-1400 mx-auto px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 '>
                     {categories.map((category) => (
                         <div key={category.id} className=' rounded-xl overflow-hidden md:p-4'>
                             {/* Card Image */}

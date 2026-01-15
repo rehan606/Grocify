@@ -73,7 +73,7 @@ const reviews = [
 
 const Testimonials = () => {
     return (
-        <section className='max-w-1400 mx-auto px-10  lg:py-20'>
+        <section className='max-w-1400 mx-auto px-10  lg:py-16'>
             <div className=''>
                 <Heading title="Customers" content="Saying" />
 
