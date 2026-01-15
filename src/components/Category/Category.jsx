@@ -37,20 +37,20 @@ const Category = () => {
                <Heading title="Shop" content="by Category" />
 
                {/* Category Grid */}
-                <div className='max-w-1400 mx-auto px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 '>
+                <div className='max-w-1400 mx-auto px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 '>
                     {categories.map((category) => (
-                        <div key={category.id} className=' rounded-xl overflow-hidden'>
+                        <div key={category.id} className=' rounded-xl overflow-hidden md:p-4'>
                             {/* Card Image */}
                             <div className='w-full min-h-[30vh] -mb-10 relative '>
                                 <img src={category.image} alt={category.name} className='absolute bottom-0' />
                             </div>
 
                             {/* Card Content */}
-                            <div className='p-6 bg-zinc-100 rounded-xl'>
+                            <div className=' p-6 bg-zinc-100 rounded-xl w-full min-h-[42vh]'>
                                 <h3 className='text-xl text-zinc-800 font-bold mb-2 pt-10'>{category.name}</h3>
                                 <p className='text-zinc-600 mt-3 mb-7'>{category.description}</p>
                                 
-                                <Link to={category.path} className="bg-linear-to-r from-orange-400 to-orange-500 text-white text-md md:text-lg px-8 py-3 rounded-full  hover:bg-orange-100 transition-all duration-300 cursor-pointer hover:scale-105">Shop Now</Link>
+                                <Link to={category.path} className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg font-semibold transition text-white">Shop Now</Link>
                             </div>
                         </div>
                     ))}

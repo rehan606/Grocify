@@ -22,7 +22,7 @@ const Footer = () => {
                     <div className="">
                         <h3 className="text-xl font-bold text-zinc-800 mb-4">Company</h3>
                         <ul className="space-y-3">
-                            <li className=""> <a href="#" className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">About</a> </li>
+                            <li className=""> <Link to={'/about'} className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">About</Link> </li>
                             <li> <a href="#" className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">FAQ's</a> </li>
                         </ul>
                     </div>
@@ -33,7 +33,7 @@ const Footer = () => {
                         <ul className="space-y-3">
                             <li> <a href="#" className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Support Center</a> </li>
                             <li> <a href="#" className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Feedback</a> </li>
-                            <li> <a href="#" className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Contact us</a> </li>
+                            <li> <Link to={'/contact'} className="text-zinc-800 hover:text-orange-500 transition-all duration-300 ">Contact us</Link> </li>
                         </ul>
                     </div>
 

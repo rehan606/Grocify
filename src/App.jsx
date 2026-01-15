@@ -8,6 +8,7 @@ import AllProducts from './components/AllProducts/AllProducts'
 import Layout from './components/Layout/Layout'
 import About from './Pages/About/About'
 import Contact from './Pages/Contact/Contact'
+import Service from './Pages/Service/Service'
 
 const App = () => {
 
@@ -43,6 +44,10 @@ const App = () => {
         {
           path: '/contact', 
           element: <Contact />
+        },
+        {
+          path: '/services', 
+          element: <Service />
         },
       ]
     },
