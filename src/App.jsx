@@ -6,7 +6,8 @@ import Dairy from './components/Dairy/Dairy'
 import SeaFood from './components/SeaFood/SeaFood'
 import AllProducts from './components/AllProducts/AllProducts'
 import Layout from './components/Layout/Layout'
-import About from './Pages/About'
+import About from './Pages/About/About'
+import Contact from './Pages/Contact/Contact'
 
 const App = () => {
 
@@ -38,6 +39,10 @@ const App = () => {
         {
           path: '/about', 
           element: <About />
+        },
+        {
+          path: '/contact', 
+          element: <Contact />
         },
       ]
     },
