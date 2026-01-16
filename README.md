@@ -80,7 +80,7 @@ swiper
 ## 📸 Screenshots
 
 <img 
-  src="https://github.com/rehan606/Grocify/blob/613ee437a4e6e69f091594ff1817c79ac9240e0a/src/assets/images/grocify-home.webp" 
+  src="https://github.com/rehan606/Grocify/blob/f6c4d3d6c4238dda46ee3c7f4e268355dc463dac/src/assets/images/grocify-home.png" 
   alt="Grocify Home Page"
   width="800"
 />
