@@ -1,6 +1,7 @@
 import React from 'react'
 import Grocery from '../../assets/images/grocery.webp'
 import Button from '../Button/Button'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
 
                 <p className="text-md md:text-xl text-zink-600 mt-5 mb-8 max-w-132.5">Bred for a high-quality experience. Your one-stop shop for all grocery needs.</p>
 
-                <Button content="Shop Now" />
+                <Link to={'/allproducts'} className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg font-semibold transition text-white">Shop Now</Link>
             </div>
 
             {/* Hero Image  */}

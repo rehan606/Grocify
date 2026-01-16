@@ -5,7 +5,7 @@ import BgAll from '../../assets/images/all-banner.webp'
 const AllProducts = () => {
   return (
     <div>
-        <CategoryPage title="All Products" bgImage={BgAll} categories={['All']} />
+        <CategoryPage title="All " content='Products' subtitle='Our all grocery Products are here.' bgImage={BgAll} categories={['All']} />
     </div>
   )
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 // import required modules
-import { Navigation } from 'swiper/modules'; 
+import { Navigation, Autoplay } from 'swiper/modules';
+
 
 
 import Heading from '../Heading/Heading'
@@ -103,7 +105,7 @@ const Testimonials = () => {
                         768: {slidesPerView: 2, spaceBetween: 20},
                         1040: {slidesPerView: 3, spaceBetween: 20},
                     }}
-                    modules={[Navigation]} className="mySwiper">
+                    modules={[Navigation, Autoplay]} className="mySwiper">
                     {reviews.map(review => (
                         <SwiperSlide SwiperSlide key={review.id} className='mt-4 lg:mt-10 mb-10 bg-zinc-100 p-4 md:p-10 rounded-lg shadow-lg mx-auto'>
                             <div className='flex items-center gap-5 mb-5'>
