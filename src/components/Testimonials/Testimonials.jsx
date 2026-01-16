@@ -9,11 +9,11 @@ import Heading from '../Heading/Heading'
 import { IoIosArrowForward , IoIosArrowBack} from 'react-icons/io'
 
 
-import Customer1 from '../../assets/images/customer1.jpg'
-import Customer2 from '../../assets/images/customer2.jpg'
-import Customer3 from '../../assets/images/customer3.jpg'
-import Customer4 from '../../assets/images/customer4.jpg'
-import Customer5 from '../../assets/images/customer5.jpg'
+import Customer1 from '../../assets/images/customer1.webp'
+import Customer2 from '../../assets/images/customer2.webp'
+import Customer3 from '../../assets/images/customer3.webp'
+import Customer4 from '../../assets/images/customer4.webp'
+import Customer5 from '../../assets/images/customer5.webp'
 
 
 

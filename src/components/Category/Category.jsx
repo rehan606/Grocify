@@ -1,8 +1,8 @@
 import React from 'react'
 import Heading from '../Heading/Heading'
-import FruitsCategoryImage from '../../assets/images/fruits-and-veggies.png'
-import DairyCategoryImage from '../../assets/images/dairy-and-eggs.png'
-import VegetablesCategoryImage from '../../assets/images/meat-and-seafood.png'
+import FruitsCategoryImage from '../../assets/images/fruits-and-veggies.webp'
+import DairyCategoryImage from '../../assets/images/dairy-and-eggs.webp'
+import VegetablesCategoryImage from '../../assets/images/meat-and-seafood.webp'
 import { Link } from 'react-router-dom'
 
 // Category Array (You can expand this as needed)

@@ -1,6 +1,6 @@
 import React from 'react'
 import CategoryPage from '../CategoryPage/CategoryPage'
-import BgAll from '../../assets/images/all-banner.jpg'
+import BgAll from '../../assets/images/all-banner.webp'
 
 const AllProducts = () => {
   return (

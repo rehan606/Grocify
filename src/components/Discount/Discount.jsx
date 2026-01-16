@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../Button/Button'
-import DiscountBG from '../../assets/images/fresh-fruits.png'
+import DiscountBG from '../../assets/images/fresh-fruits.webp'
 
 const Discount = () => {
   return (

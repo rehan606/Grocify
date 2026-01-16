@@ -2,7 +2,7 @@ import React from 'react'
 import Heading from '../Heading/Heading'
 import { FaHeart, FaLeaf, FaShieldAlt, FaTree } from 'react-icons/fa';
 import { PiPlantFill } from 'react-icons/pi';
-import ValuesImage from '../../assets/images/basket-full-vegetables.png';
+import ValuesImage from '../../assets/images/basket-full-vegetables.webp';
 
 
 const ValuesData = [
